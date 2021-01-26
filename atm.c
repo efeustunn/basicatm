@@ -1,14 +1,16 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-/* 1- bakiye görüntüle 
-2- para yatır
-3-para çek
-4-fatura öde
+/* 1- bakiye gÃ¶rÃ¼ntÃ¼le 
+2- para yatÄ±r
+3-para Ã§ek
+4-fatura Ã¶de
 -internet
 -elektrik
 -su
 4-geri
+sifre 4407
+
  */
 
 int main() {
@@ -36,14 +38,14 @@ int main() {
 	scanf("%d",&islem);
 	
 	switch(islem){
-		case 1://bakıye gosterme
+		case 1://bakÄ±ye gosterme
 			system("CLS");
 			printf("----------------------\n\n\n");
 			printf("   Bakiyeniz %d TL\n\n\n ",bakiye);
 			printf("----------------------\n");
 
 			break;
-		case 2://para yatırma
+		case 2://para yatÄ±rma
 			system("CLS");
 
 			printf("Yatirmak istediginiz para miktarini giriniz: ");
@@ -65,7 +67,7 @@ int main() {
 		case 3://para cekme
 				system("CLS");
 
-				printf("Cekmek istediginiz tutarı giriniz: ");
+				printf("Cekmek istediginiz tutarÄ± giriniz: ");
 				scanf("%d",&paracek);
 				system("CLS");
 				if(paracek>bakiye){
@@ -84,7 +86,7 @@ int main() {
 					i=0;
 				}
 				break;
-		case 4: //fatura kısmı
+		case 4: //fatura kÄ±smÄ±
 				
 				system("CLS");
 			
@@ -97,14 +99,14 @@ int main() {
 			if(secc==1){
 				system("CLS");
 				bakiye=bakiye-elkborc;
-				printf("Faturanız odenmistir.. Kalan bakiyeniz %d TL\n\n",bakiye);
+				printf("FaturanÄ±z odenmistir.. Kalan bakiyeniz %d TL\n\n",bakiye);
 				elkborc=0;
 				i=0;
 			}
 			if(secc==2)
 				{system("CLS");
 				bakiye=bakiye-suborc;
-				printf("Faturanız odenmistir.. Kalan bakiyeniz %d TL\n\n",bakiye);
+				printf("FaturanÄ±z odenmistir.. Kalan bakiyeniz %d TL\n\n",bakiye);
 				suborc=0;
 				i=0;				
 			}
@@ -112,7 +114,7 @@ int main() {
 				system("CLS");
 				bakiye=bakiye-netborc;
 				netborc=0;
-				printf("Faturanız odenmistir.. Kalan bakiyeniz %d TL\n\n",bakiye);
+				printf("FaturanÄ±z odenmistir.. Kalan bakiyeniz %d TL\n\n",bakiye);
 				i=0;
 			}		
 			
@@ -122,7 +124,7 @@ int main() {
 		
 	}
 	else{
-		printf("Yanlis sifre.Lütfen tekrar deneyiniz.\n");
+		printf("Yanlis sifre.LÃ¼tfen tekrar deneyiniz.\n");
 		
 		
 	} 
